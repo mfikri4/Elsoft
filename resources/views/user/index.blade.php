@@ -77,6 +77,11 @@
                           {{ date('H:i y F Y', strtotime($dt->created_at)); }}
                       </td>
                       <td class="project-actions text-right">
+                         <a class="btn btn-primary btn-sm" href="{{ ('user/show/'.$dt->id) }}">
+                              <i class="fas fa-folder">
+                              </i>
+                              View
+                          </a>
                           <a class="btn btn-info btn-sm" href="{{ ('user/edit/'.$dt->id) }}">
                               <i class="fas fa-pencil-alt">
                               </i>
